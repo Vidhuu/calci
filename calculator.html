@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="number"]{
+            margin-top: 30px;
+            border-radius: 10px;
+            padding: 5px;
+            background-color: aqua;
+            margin-left: 500px;
+            color:black;
+            
+        }
+        
+        .add,.sub,.mul,.div{
+            border-radius: 30px;
+            padding: 15px;
+            margin: 15px;
+        }
+        .add{
+            margin-left: 400px;
+            
+        }
+        body{
+            background-image: url(/Assert/calcii.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <script>
+        function sum(){
+            let a=Number(document.getElementById("n1").value);
+            let b=Number(document.getElementById("n2").value);
+            let ans=a+b;
+            document.getElementById("ans").value=ans;
+        }
+        function subtract(){
+            let a=Number(document.getElementById("n1").value);
+            let b=Number(document.getElementById("n2").value);
+            let ans=a-b;
+            document.getElementById("ans").value=ans;
+        }
+        function multiply(){
+            let a=Number(document.getElementById("n1").value);
+            let b=Number(document.getElementById("n2").value);
+            let ans=a*b;
+            document.getElementById("ans").value=ans;
+        }
+        function divide(){
+            let a=Number(document.getElementById("n1").value);
+            let b=Number(document.getElementById("n2").value);
+            let ans=a/b;
+            document.getElementById("ans").value=ans;
+        }
+    </script>
+    <input type="number" placeholder="num1" id="n1">
+    <input type="number" placeholder="num2" id="n2"> <br> <br>
+    <button class="add" onclick="sum()">Add</button>
+    <button class="sub" onclick="subtract()">subtract</button>
+    <button class="mul" onclick="multiply()">Multiply</button>
+    <button class="div" onclick="divide()">Division</button> <br> <br>
+    <input type="number" placeholder="answer" id="ans">
+
+</body>
+    
+        
+
+</html>
